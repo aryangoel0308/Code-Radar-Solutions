@@ -4,5 +4,5 @@ int main() {
     scanf("%f", &x);
     printf("you entered: %.2f%",x);
 
-    return 0
+    return 0;
 }
