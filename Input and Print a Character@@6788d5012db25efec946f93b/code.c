@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int a = A
-    scanf("%c", a);
-    printf("%c", a);
+    char A;
+    scanf("%c", A);
+    printf("%c", A);
     
     return 0;
 }
