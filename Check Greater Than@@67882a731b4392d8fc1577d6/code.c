@@ -8,5 +8,10 @@ int main() {
     else if (a < b){
         printf("False\n");
     }
+    else if (a = b){
+        printf("False\n");
+    }
     return 0;
+
+
 }
