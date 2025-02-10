@@ -8,5 +8,9 @@ int main() {
     else if (a<0 && b<0){
         printf("False\n");
     }
+    else if (a=0 && b=0){
+        printf("False\n");
+    }
     return 0;
+
 }
