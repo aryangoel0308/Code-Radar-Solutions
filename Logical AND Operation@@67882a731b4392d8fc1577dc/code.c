@@ -8,5 +8,8 @@ int main() {
     else if (a || -b){
         printf("False\n");
     }
+    else{
+        printf("False\n");
+    }
     return 0;
 }
