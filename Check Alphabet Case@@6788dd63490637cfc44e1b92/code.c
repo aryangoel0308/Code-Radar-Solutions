@@ -7,6 +7,8 @@ int main() {
     }
     else 
         printf("Lowercase\n");
-    
+    else if(ch>=0 && ch<=9){
+        printf("Not an alphabet\n");
+    }
     return 0;
 }
