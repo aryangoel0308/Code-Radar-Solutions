@@ -17,5 +17,5 @@ int main() {
     else if(a == F){
         printf("Fail");
     }
-        return 0;
+    return 0;
 }
