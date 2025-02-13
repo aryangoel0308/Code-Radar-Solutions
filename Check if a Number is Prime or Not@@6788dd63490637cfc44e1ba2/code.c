@@ -1,12 +1,18 @@
 #include <stdio.h>
 int main() {
-    int a, b=2;
+    int a, b;
     scanf("%d", &a);
-    if((a % 1) == 0 && (a % a) == 0){
+    if(a <= 1){
+        printf("Not Prime");
+    }
+    else if(a == 2 || a == 3 || a == 5 || a == 7){
         printf("Prime");
     }
-    else if((a % 1) == 0 && (a % a) == 0 && (a % b) == 0){
+    else if(a % 2 == 0 || a % 3 == 0 || a % 5 == 0 || a % 7 == 0){
         printf("Not Prime");
+    }
+    else{
+        printf("Prime");
     }
     return 0;
 }
