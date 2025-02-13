@@ -5,7 +5,7 @@ int main() {
     if((a % 1) == 0 && (a % a) == 0){
         printf("Prime");
     }
-    else if((a % 1) == 0 && (a % a) == 0 && (a % b) == 0 ){
+    else if((a % 1) == 0 && (a % a) == 0 && (a % b) == 0){
         printf("Not Prime");
     }
     return 0;
