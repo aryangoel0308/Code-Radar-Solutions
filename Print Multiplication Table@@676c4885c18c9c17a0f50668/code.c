@@ -2,6 +2,7 @@
 int main() {
     int a, i, b;
     scanf("%d", &a);
+    b = a*i;
     for(i = 1; i <= 10; i++){
         printf("%d * %d = %d\n", a, i, b);
     }
