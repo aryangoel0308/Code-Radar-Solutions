@@ -2,9 +2,9 @@
 
 void checkNumbers(int a, int b) {
     if ((a > 0 && b < 0) || (a == 0 && b == 0)) {
-        printf("Condition met!\n");
+        printf("True\n");
     } else {
-        printf("Condition not met.\n");
+        printf("Falsen");
     }
 }
 
