@@ -7,7 +7,6 @@ int main() {
     scanf("%d", &num1);
     scanf("%d", &num2);
 
-    // Perform Bitwise OR operation
     result = num1 ^ num2;
 
     // Print the result
