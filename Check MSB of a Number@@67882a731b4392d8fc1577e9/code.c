@@ -2,13 +2,16 @@
 
 int main() {
     int num;
-
+    
+    // Input from user
     scanf("%d", &num);
 
-    if (num & 1)
-        printf("Not Set");
+    int msb_mask = 1 << 31;
+
+    if (num & msb_mask)
+        printf("Set\n");
     else
-        printf("Set");
+        printf("Not Set\n");
 
     return 0;
 }
