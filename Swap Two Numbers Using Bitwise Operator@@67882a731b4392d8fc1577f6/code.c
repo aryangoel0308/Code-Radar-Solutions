@@ -11,15 +11,15 @@ void swapUsingXOR(int *a, int *b) {
 int main() {
     int x, y;
     
-    // Input two numbers
+    // Read input values
     scanf("%d %d", &x, &y);
 
-    printf("%d %d\n", x, y);
-    
-    // Swap using XOR
+    // Perform XOR swap
     swapUsingXOR(&x, &y);
 
+    // Corrected Output
     printf("%d %d\n", x, y);
 
     return 0;
 }
+
