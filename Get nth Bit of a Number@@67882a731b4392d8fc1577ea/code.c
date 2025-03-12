@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int getNthBit(int num, int n) {
-    return (num >> n) & 1; // Right shift and bitwise AND
+    return (num >> n) & 1; 
 }
 
 int main() {
@@ -13,7 +13,6 @@ int main() {
         return 1;
     }
 
-    // Get nth bit
     int bit = getNthBit(num, n);
     printf("%d\n",num);
 
