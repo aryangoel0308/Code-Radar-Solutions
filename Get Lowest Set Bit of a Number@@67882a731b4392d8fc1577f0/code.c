@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int getLowestSetBitPosition(int num) {
-    if (num == 0) return 0;
+    if (num == 0) return -1;  // Change return value to -1 if no set bit is found
 
-    int position = 1;
-    while ((num & 1) == 0) { // Shift until we find the first set bit
+    int position = 1;  // 1-based index
+    while ((num & 1) == 0) { 
         num >>= 1;
         position++;
     }
@@ -13,15 +13,14 @@ int getLowestSetBitPosition(int num) {
 
 int main() {
     int num;
-    
     scanf("%d", &num);
 
     int position = getLowestSetBitPosition(num);
 
-    if (position == 0)
-        printf("0\n");  // Fix: Proper printf statement
+    if (position == -1)
+        printf("0\n");  // If no bit is set, print 0
     else
-        printf("%d\n", position);
+        printf("%d\n", position - 1);  // Convert 1-based index to 0-based if required
 
     return 0;
 }
