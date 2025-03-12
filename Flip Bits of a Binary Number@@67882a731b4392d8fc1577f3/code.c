@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-unsigned int flipBits(unsigned int num) {
-    return ~num; // Bitwise NOT operation
-}
-
 int main() {
-    unsigned int num;
-    scanf("%u", &num); // Input a 32-bit unsigned integer
+    int num;
+    scanf("%d", &num);
 
-    unsigned int flipped = flipBits(num);
-    printf("%u\n", flipped); // Print the flipped result
+    int flipped = ~num;  // Bitwise NOT operation
+    printf("%d\n", flipped);  // Ensure it's treated as a signed integer
 
     return 0;
 }
