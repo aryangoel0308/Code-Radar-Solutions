@@ -12,3 +12,18 @@ int getLowestSetBitPosition(int num) {
     return position;
 }
 
+
+int main() {
+    int num;
+    
+    scanf("%d", &num);
+
+    int position = getLowestSetBitPosition(num);
+
+    if (position == 0)
+        printf("No set bit found (number is 0).\n");
+    else
+        printf("%d\n", position);
+
+    return 0;
+}
